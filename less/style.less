@@ -1,0 +1,48 @@
+// out: ../css/style.css
+
+body {
+  font-family: 'helvetica neue', sans-serif;
+}
+
+body > h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+form {
+  width: 50%;
+  text-align: center;
+  margin: 4em auto;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.output.show {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+.output {
+  display: flex;
+  width: 50%;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #eee;
+  align-items: flex-start;
+  
+  .media-body {
+    margin-left: 1em;
+  }
+  
+  h1 {
+    margin: 0.25em 0;
+  }
+  
+  p:last-child {
+    margin-bottom: 0
+  }
+}
